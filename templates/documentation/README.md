@@ -17,8 +17,10 @@ The source files are examples for adaptation, not a guarantee that every wiki's 
 - Keep factual content on the article page; templates should organize and display it.
 - Use the same parameter names across pages of the same type.
 - Leave unknown information blank rather than guessing.
+- Infoboxes use a consistent green visual style; optional fields are hidden when their parameters are blank.
 - Prefer accessible headings and readable contrast. Do not rely on colour alone to communicate difficulty or status.
-- If a template uses CSS classes, confirm that the target wiki's stylesheet supports them. The starter templates here mainly use standard MediaWiki table markup.
+- The infoboxes use the `#if` parser function and require the MediaWiki ParserFunctions extension.
+- Templates use inline styles so their core appearance does not depend on custom wiki CSS. Confirm that inline styles are permitted by the target wiki's configuration.
 
 ## Suggested page names
 
