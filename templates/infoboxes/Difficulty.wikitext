@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable" style="float: right; width: min(100%, 300px); margin: 0 0 1em 1em;"
+|+ {{{name|{{PAGENAME}}}}}
+|-
+! Category
+| {{{category|Unknown}}}
+|-
+! Description
+| {{{description|Not documented yet.}}}
+|-
+! Criteria
+| {{{criteria|See the wiki's documented criteria.}}}
+|}</includeonly><noinclude>
+== Usage ==
+<pre>
+{{Difficulty infobox
+ | name = Example Difficulty
+ | category = Tower difficulty
+ | description = A short, neutral description.
+ | criteria = Summarize the established classification criteria.
+}}
+</pre>
+
+All parameters are optional. Make sure descriptions and criteria match the wiki's established classification system.
+</noinclude>
