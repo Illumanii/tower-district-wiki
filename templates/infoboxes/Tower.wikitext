@@ -1,0 +1,36 @@
+<includeonly>{| class="wikitable" style="float: right; width: min(100%, 300px); margin: 0 0 1em 1em;"
+|+ {{{name|{{PAGENAME}}}}}
+|-
+! Abbreviation
+| {{{abbreviation|Unknown}}}
+|-
+! Difficulty
+| {{{difficulty|Unknown}}}
+|-
+! Area
+| {{{area|Unknown}}}
+|-
+! Creator(s)
+| {{{creators|Unknown}}}
+|-
+! Floors
+| {{{floors|Unknown}}}
+|-
+! Release status
+| {{{status|Unknown}}}
+|}</includeonly><noinclude>
+== Usage ==
+<pre>
+{{Tower infobox
+ | name = Example Tower
+ | abbreviation = ToEX
+ | difficulty = Challenging
+ | area = Example Area
+ | creators = Creator name
+ | floors = 10
+ | status = Released
+}}
+</pre>
+
+All parameters are optional. Verify facts before adding them to an article.
+</noinclude>
