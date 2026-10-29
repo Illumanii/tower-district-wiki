@@ -1,0 +1,22 @@
+<includeonly><div class="td-area-info">
+<div style="padding: 0.75em 1em; border-left: 4px solid #64748b; background: #f1f5f9; margin: 0.75em 0;">
+'''{{{title|Area information}}}'''<br />
+{{{text|}}}
+</div>
+</div></includeonly><noinclude>
+== Usage ==
+A simple highlighted section for a district or area article.
+
+<pre>
+{{Area info section
+ | title = Overview
+ | text = A short, sourced description of the area.
+}}
+</pre>
+
+Parameters:
+* `title` — optional heading; defaults to “Area information”.
+* `text` — the content displayed in the section.
+
+Copy this source into `Template:Area info section` on the target wiki and test it in a sandbox.
+</noinclude>
