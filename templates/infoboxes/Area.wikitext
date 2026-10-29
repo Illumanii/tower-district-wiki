@@ -1,22 +1,16 @@
-<includeonly>{| class="wikitable" style="float: right; width:  min(100%, 300px); margin: 0 0 1em 1em;"
-|+ {{{name|{{PAGENAME}}}}}
-|-
-! Type
-| {{{type|Unknown}}}
-|-
-! District
-| {{{district|Unknown}}}
-|-
-! Number of towers
-| {{{tower_count|Unknown}}}
-|-
-! Status
-| {{{status|Unknown}}}
-|-
-! Description
-| {{{description|Not documented yet.}}}
-|}</includeonly><noinclude>
+<includeonly><div style="float: right; width: 300px; max-width: 100%; background: #e8f5e9; color: #333; border: 1px solid #b8d4a8; padding: 10px; margin: 0 0 10px 10px; font-family: Arial, sans-serif; border-radius: 5px;">
+  <h3 style="text-align: center; margin: 0 0 10px; font-size: 1.2em; background: #b8d4a8; padding: 5px; border-radius: 3px; color: #2e4a2e;">{{{name|{{PAGENAME}}}}}</h3>
+  <div style="background: #f1f8e9; padding: 10px; font-size: 0.9em; border-radius: 3px; border: 1px solid #b8d4a8;">
+    {{#if:{{{type|}}}|<div><strong>Type:</strong> {{{type}}}</div>}}
+    {{#if:{{{district|}}}|<div><strong>District:</strong> {{{district}}}</div>}}
+    {{#if:{{{tower_count|}}}|<div><strong>Number of Towers:</strong> {{{tower_count}}}</div>}}
+    {{#if:{{{status|}}}|<div><strong>Status:</strong> {{{status}}}</div>}}
+    {{#if:{{{description|}}}|<div><strong>Description:</strong> {{{description}}}</div>}}
+  </div>
+</div></includeonly><noinclude>
 == Usage ==
+This template creates a green area infobox. Fields are displayed only when their parameters are supplied.
+
 <pre>
 {{Area infobox
  | name = Example Area
@@ -28,5 +22,9 @@
 }}
 </pre>
 
-All parameters are optional. Replace unknown values with verified information, or omit them if the target wiki prefers no unknown rows.
+Parameters:
+* name — heading; defaults to the current page title.
+* type, district, tower_count, status, description — optional area details.
+
+This template uses the #if parser function, which requires the MediaWiki ParserFunctions extension. Preview it in a sandbox before using it on live pages.
 </noinclude>
