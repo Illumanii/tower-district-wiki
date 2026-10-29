@@ -1,36 +1,57 @@
-<includeonly>{| class="wikitable" style="float: right; width: min(100%, 300px); margin: 0 0 1em 1em;"
-|+ {{{name|{{PAGENAME}}}}}
-|-
-! Abbreviation
-| {{{abbreviation|Unknown}}}
-|-
-! Difficulty
-| {{{difficulty|Unknown}}}
-|-
-! Area
-| {{{area|Unknown}}}
-|-
-! Creator(s)
-| {{{creators|Unknown}}}
-|-
-! Floors
-| {{{floors|Unknown}}}
-|-
-! Release status
-| {{{status|Unknown}}}
-|}</includeonly><noinclude>
+<includeonly><div style="float: right; width: 300px; max-width: 100%; background: #e8f5e9; color: #333; border: 1px solid #b8d4a8; padding: 10px; margin: 0 0 10px 10px; font-family: Arial, sans-serif; border-radius: 5px;">
+  <h3 style="text-align: center; margin: 0 0 10px; font-size: 1.2em; background: #b8d4a8; padding: 5px; border-radius: 3px; color: #2e4a2e;">{{{title|{{PAGENAME}}}}}</h3>
+  {{#if:{{{image|}}}|
+    <div style="text-align: center; margin-bottom: 10px; border: 1px solid #9ac790; padding: 4px;">
+      [[File:{{{image}}}|frameless|center|alt={{{title|{{PAGENAME}}}}}]]
+    </div>
+  }}
+  <div style="background: #f1f8e9; padding: 10px; font-size: 0.9em; border-radius: 3px; border: 1px solid #b8d4a8;">
+    <h3 style="text-align: center; margin: 0 0 10px; font-size: 1.2em; background: #b8d4a8; padding: 5px; border-radius: 3px; color: #2e4a2e;">Tower Information</h3>
+    {{#if:{{{location|}}}|<div><strong>Located In:</strong> {{{location}}}</div>}}
+    {{#if:{{{previous_location|}}}|<div><strong>Previously Located In:</strong> {{{previous_location}}}</div>}}
+    {{#if:{{{deconfirmed_from|}}}|<div><strong>Deconfirmed From:</strong> {{{deconfirmed_from}}}</div>}}
+    {{#if:{{{tower_type|}}}|<div><strong>Type of Tower:</strong> {{{tower_type}}}</div>}}
+    {{#if:{{{length|}}}|<div><strong>Length:</strong> {{{length}}}</div>}}
+    {{#if:{{{difficulty|}}}|<div><strong>Difficulty:</strong> {{{difficulty}}}</div>}}
+    {{#if:{{{creator|}}}|<div><strong>Creator(s):</strong> {{{creator}}}</div>}}
+    {{#if:{{{techniques|}}}|<div><strong>Techniques Required:</strong> {{{techniques}}}</div>}}
+    <h3 style="text-align: center; margin: 10px 0; font-size: 1.2em; background: #b8d4a8; padding: 5px; border-radius: 3px; color: #2e4a2e;">Additional Information</h3>
+    {{#if:{{{previous_difficulty|}}}|<div><strong>Previous Difficulties:</strong> {{{previous_difficulty}}}</div>}}
+    {{#if:{{{original_difficulty|}}}|<div><strong>Original Difficulty:</strong> {{{original_difficulty}}}</div>}}
+    {{#if:{{{previous_name|}}}|<div><strong>Previous Name(s):</strong> {{{previous_name}}}</div>}}
+    {{#if:{{{date_added|}}}|<div><strong>Date Added:</strong> {{{date_added}}}</div>}}
+    {{#if:{{{date_removed|}}}|<div><strong>Date Removed:</strong> {{{date_removed}}}</div>}}
+    {{#if:{{{removal_reason|}}}|<div><strong>Removal Reason(s):</strong> {{{removal_reason}}}</div>}}
+  </div>
+</div></includeonly><noinclude>
 == Usage ==
+This template creates a green tower infobox. Fields are shown only when their parameters are supplied.
+
 <pre>
 {{Tower infobox
- | name = Example Tower
- | abbreviation = ToEX
+ | title = Example Tower
+ | image = Example.png
+ | location = District 1
+ | previous_location = Old District
+ | deconfirmed_from = Example Difficulty
+ | tower_type = Tower
+ | length = 10 floors
  | difficulty = Challenging
- | area = Example Area
- | creators = Creator name
- | floors = 10
- | status = Released
+ | creator = Creator name
+ | techniques = Wall hopping
+ | previous_difficulty = Difficult
+ | original_difficulty = Challenging
+ | previous_name = Tower of Example
+ | date_added = 1 January 2026
+ | date_removed =
+ | removal_reason =
 }}
 </pre>
 
-All parameters are optional. Verify facts before adding them to an article.
+Parameters:
+* title — heading; defaults to the current page title.
+* image — optional image filename.
+* location, previous_location, deconfirmed_from, tower_type, length, difficulty, creator, techniques, previous_difficulty, original_difficulty, previous_name, date_added, date_removed, removal_reason — optional tower details.
+
+This template uses the #if parser function, which requires the MediaWiki ParserFunctions extension. Preview it in a sandbox before using it on live pages.
 </noinclude>
