@@ -1,11 +1,9 @@
-<includeonly><div class="td-area-info">
-<div style="padding: 0.75em 1em; border-left: 4px solid #64748b; background: #f1f5f9; margin: 0.75em 0;">
+<includeonly><div style="padding: 0.75em 1em; border-left: 4px solid #6b9f62; background: #f1f8e9; color: #2e4a2e; margin: 0.75em 0; border-radius: 3px;">
 '''{{{title|Area information}}}'''<br />
 {{{text|}}}
-</div>
 </div></includeonly><noinclude>
 == Usage ==
-A simple highlighted section for a district or area article.
+A highlighted section for a district or area article.
 
 <pre>
 {{Area info section
@@ -15,8 +13,8 @@ A simple highlighted section for a district or area article.
 </pre>
 
 Parameters:
-* `title` — optional heading; defaults to “Area information”.
-* `text` — the content displayed in the section.
+* title — optional heading; defaults to “Area information”.
+* text — the content displayed in the section.
 
-Copy this source into `Template:Area info section` on the target wiki and test it in a sandbox.
+This template uses inline styles and standard MediaWiki template parameters. Copy this source into `Template:Area info section` on the target wiki and test it in a sandbox.
 </noinclude>
