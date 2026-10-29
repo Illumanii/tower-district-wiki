@@ -1,0 +1,32 @@
+<includeonly>{| class="wikitable" style="float: right; width:  min(100%, 300px); margin: 0 0 1em 1em;"
+|+ {{{name|{{PAGENAME}}}}}
+|-
+! Type
+| {{{type|Unknown}}}
+|-
+! District
+| {{{district|Unknown}}}
+|-
+! Number of towers
+| {{{tower_count|Unknown}}}
+|-
+! Status
+| {{{status|Unknown}}}
+|-
+! Description
+| {{{description|Not documented yet.}}}
+|}</includeonly><noinclude>
+== Usage ==
+<pre>
+{{Area infobox
+ | name = Example Area
+ | type = Area
+ | district = District 1
+ | tower_count = 12
+ | status = Released
+ | description = A brief, verified summary.
+}}
+</pre>
+
+All parameters are optional. Replace unknown values with verified information, or omit them if the target wiki prefers no unknown rows.
+</noinclude>
