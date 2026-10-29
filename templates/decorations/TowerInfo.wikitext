@@ -1,0 +1,22 @@
+<includeonly><div class="td-tower-info">
+<div style="padding: 0.75em 1em; border-left: 4px solid #0f766e; background: #f0fdfa; margin: 0.75em 0;">
+'''{{{title|Tower information}}}'''<br />
+{{{text|}}}
+</div>
+</div></includeonly><noinclude>
+== Usage ==
+A highlighted section for a tower article, such as notes about its gameplay or development history.
+
+<pre>
+{{Tower info section
+ | title = Notes
+ | text = Add verified information here.
+}}
+</pre>
+
+Parameters:
+* `title` — optional heading; defaults to “Tower information”.
+* `text` — the content displayed in the section.
+
+Copy this source into `Template:Tower info section` on the target wiki and test it in a sandbox.
+</noinclude>
