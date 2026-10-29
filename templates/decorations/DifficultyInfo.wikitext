@@ -1,8 +1,6 @@
-<includeonly><div class="td-difficulty-info">
-<div style="padding: 0.75em 1em; border-left: 4px solid #7c3aed; background: #f5f3ff; margin: 0.75em 0;">
+<includeonly><div style="padding: 0.75em 1em; border-left: 4px solid #6b9f62; background: #f1f8e9; color: #2e4a2e; margin: 0.75em 0; border-radius: 3px;">
 '''{{{title|Difficulty information}}}'''<br />
 {{{text|}}}
-</div>
 </div></includeonly><noinclude>
 == Usage ==
 A highlighted section for explaining a difficulty classification or its wiki-specific criteria.
@@ -15,8 +13,8 @@ A highlighted section for explaining a difficulty classification or its wiki-spe
 </pre>
 
 Parameters:
-* `title` — optional heading; defaults to “Difficulty information”.
-* `text` — the content displayed in the section.
+* title — optional heading; defaults to “Difficulty information”.
+* text — the content displayed in the section.
 
-Copy this source into `Template:Difficulty info section` on the target wiki and test it in a sandbox.
+This template uses inline styles and standard MediaWiki template parameters. Copy this source into `Template:Difficulty info section` on the target wiki and test it in a sandbox.
 </noinclude>
